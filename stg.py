@@ -11,7 +11,7 @@ pygame.init()
 pygame.mixer.init()
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 # Nombre de la ventana
-pygame.display.set_caption("SHMUP")
+pygame.display.set_caption("STG")
 clock = pygame.time.Clock()
 
 # Dibujar texto para Score
@@ -125,7 +125,7 @@ class Explosion(pygame.sprite.Sprite):
 
 def show_go_screen():
 	screen.blit(background, [0,0])
-	draw_text(screen, "SHMUP", 65, WIDTH // 2, HEIGHT // 4)
+	draw_text(screen, "STG", 65, WIDTH // 2, HEIGHT // 4)
 	draw_text(screen, "Usa la tecla Espacio para disparar", 27, WIDTH // 2, HEIGHT // 2)
 	draw_text(screen, "Presiona Espacio", 20, WIDTH // 2, HEIGHT * 3/4)
 	pygame.display.flip()
